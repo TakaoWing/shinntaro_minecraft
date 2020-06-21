@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
 		{
 			if (IsRunning == false)//もし走ってなかったら
 			{
-				transform.position += transform.forward * 1.0f;//自分の位置を前に進める1.0f
+				rb.AddForce(transform.forward*20);//プレイヤーの向いている方向に力を加える
 			}
 
 			else if (IsRunning == true)//もし走ってたら
